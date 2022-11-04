@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22034"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 09:46:46 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIyLTExLTA0OzA5OjA5OjIyIEFNOzMwNTk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIyLTExLTA0OzA5OjQ2OjQ2IEFNOzE7MzE3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declearing the variables"/>
+            <declare name="Celsuis, Fehrenheit" type="Real" array="False" size=""/>
+            <comment text="Enter the Celsuis"/>
+            <input variable="Celsuis"/>
+            <comment text="Appling the Formula"/>
+            <assign variable="Fehrenheit" expression="9/5*Celsuis+32"/>
+            <comment text="Declearing the output as Fehrenheit"/>
+            <output expression="Fehrenheit" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22034"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:14:23 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIyLTExLTA0OzExOjA0OjAzIEFNOzMwNDY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIyLTExLTA0OzExOjE0OjIzIEFNOzE7MzE1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="To convert Fahrenheit into celsius"/>
+            <declare name="F, c" type="Integer" array="False" size=""/>
+            <comment text="Enter the input"/>
+            <input variable="F"/>
+            <comment text="Applying the Formula"/>
+            <assign variable="c" expression="5/9*F-32"/>
+            <output expression="&quot;The celsius is&quot;&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

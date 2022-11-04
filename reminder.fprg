@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22034"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:24:53 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIyLTExLTA0OzExOjE0OjQ3IEFNOzMwNTU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIyLTExLTA0OzExOjI0OjUzIEFNOzI7MzE2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="To find reminder without mod operator"/>
+            <declare name="divisor, dividend, quotient, reminder" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value of dividend&quot;" newline="True"/>
+            <comment text="Entering the inputs"/>
+            <input variable="dividend"/>
+            <output expression="&quot;Enter the value of divisor&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <comment text="Applying formula"/>
+            <assign variable="quotient" expression="dividend/divisor"/>
+            <assign variable="reminder" expression="dividend-(quotient*divisor)"/>
+            <comment text="The output statement"/>
+            <output expression="&quot;The reminder is &quot;&amp;reminder" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

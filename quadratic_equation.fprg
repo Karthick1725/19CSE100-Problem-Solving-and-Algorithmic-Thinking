@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22034"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:40:41 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIyLTExLTA0OzA5OjA5OjIyIEFNOzMwNTk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIyLTExLTA0OzEwOjQwOjQxIEFNOzI7MzE1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declearing the inputs variables"/>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <comment text="Enter all the inputs"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="d"/>
+            <comment text="Declearing the output varianbles"/>
+            <declare name="X1, X2" type="Real" array="False" size=""/>
+            <comment text="Applying the forumla"/>
+            <assign variable="X1" expression="(sqrt((b)^2-(4*a*(c-d)))+b)/(2*a)"/>
+            <assign variable="X2" expression="(sqrt((b)^2-(4*a*(c-d)))-b)/(2*a)"/>
+            <comment text="Enter the outputs"/>
+            <output expression="X1" newline="True"/>
+            <output expression="x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
