@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22034"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:45:06 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIzLTAxLTIwOzA5OjE2OjMwIEFNOzMwNTQ="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAzNDsyMDIyMjNNQVlDMDA3MTsyMDIzLTAxLTIwOzEwOjQ1OjA2IEFNOzE7MzE1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Decleraing the variables"/>
+            <declare name="n, i, j, s, l" type="Integer" array="False" size=""/>
+            <comment text="Enter the total no of values&#13;&#10;"/>
+            <output expression="&quot;Enter the total no of values&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;Enter the numbers&quot;" newline="True"/>
+            <comment text="Using 'for loop' for getting values&#13;&#10;"/>
+            <for variable="j" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[j]"/>
+            </for>
+            <comment text="Using &quot;for loop&quot; for selection sort"/>
+            <for variable="j" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="i" expression="j"/>
+                <for variable="s" start="j+1" end="n-1" direction="inc" step="1">
+                    <if expression="a[i]&gt;a[s]">
+                        <then>
+                            <assign variable="i" expression="s"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="l" expression="a[i]"/>
+                <assign variable="a[i]" expression="a[j]"/>
+                <assign variable="a[j]" expression="l"/>
+                <comment text="Printing the output"/>
+                <output expression="l" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
